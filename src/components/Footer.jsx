@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaYoutube,
+  FaTiktok,
   FaMapMarkerAlt as MapPinIcon,
   FaPhoneAlt as PhoneIcon,
   FaEnvelope as EnvelopeIcon,
@@ -52,15 +53,16 @@ const Footer = () => {
           {/* القسم 1: الشعار والمعلومات */}
           <div className="space-y-6">
             <img src={assets.logo} alt="Logo" className="w-55  " />
-            <p className="text-gray-400 leading-relaxed">
-              نقدم حلولاً استثمارية عقارية مبتكرة في القاهرة ، نلتزم بالجودة
-              والشفافية لبناء مستقبل أفضل.
+            <p className="text-gray-400 leading-relaxed text-justify">
+              نقدم حلولاً استثمارية عقارية مبتكرة في القاهرة، نلتزم بالجودة و
+              الشفافية لبناء مستقبل أفضل.
             </p>
-            <div className="flex space-x-4">
+
+            <div className="flex space-x-1">
               {[
                 {
                   name: "facebook",
-                  url: "https://facebook.com/YemenCairo1",
+                  url: "https://facebook.com/YemenCairo.R.I",
                 },
                 {
                   name: "instagram",
@@ -72,7 +74,11 @@ const Footer = () => {
                 },
                 {
                   name: "whatsapp",
-                  url: "https://wa.me/201117962222", // استبدل برقم الهاتف الفعلي
+                  url: "https://wa.me/201147799771", // استبدل برقم الهاتف الفعلي
+                },
+                {
+                  name: "tiktok",
+                  url: "https://www.tiktok.com/@yemen.cairo", // استبدل برقم الهاتف الفعلي
                 },
               ].map((social) => (
                 <a
@@ -94,6 +100,7 @@ const Footer = () => {
                   {social.name === "whatsapp" && (
                     <FaWhatsapp className="w-5 h-5" />
                   )}
+                  {social.name === "tiktok" && <FaTiktok className="w-5 h-5" />}
                 </a>
               ))}
             </div>
@@ -136,7 +143,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <PhoneIcon className="w-5 h-5 text-[#e0a800] mt-1 mr-2" />
-                <span className="text-gray-400 mr-1">20-111-796-2222+</span>
+                <span className="text-gray-400 mr-1">20-114-779-9771+</span>
               </li>
               <li className="flex items-start">
                 <EnvelopeIcon className="w-5 h-5 text-[#e0a800] mt-1 mr-2" />
@@ -147,7 +154,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <ClockIcon className="w-5 h-5 text-[#e0a800] mt-1 mr-2" />
                 <span className="text-gray-400 mr-1">
-                  الأحد - الخميس: 8ص - 4م
+                  السبت - الخميس: 8ص - 4م
                 </span>
               </li>
             </ul>
