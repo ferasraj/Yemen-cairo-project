@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import CustomToast from "./components/CustomToast";
 import FindMore from "./components/FindMore";
@@ -18,6 +19,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
+      <Banner />
       <ScrollToTopButton />
       {/* Custom Toast component for notifications */}
       <CustomToast />
